@@ -56,9 +56,6 @@ footer ul{
     display: grid;
     grid-template-columns: 1fr;
 }
-.test {
-    position: absolute;
-}
 .borderTB {
     padding: 1rem 0;
     border-bottom: 2px solid rgb(255, 247, 213);
@@ -77,9 +74,11 @@ footer ul{
     color: white;
 }
 
-.innernav {
+.innernav, .footernav {
     text-align: center;
-    margin: auto;
+}
+.footernav ul {
+    padding: 0;
 }
 .innernav a:link {
     display: block;
