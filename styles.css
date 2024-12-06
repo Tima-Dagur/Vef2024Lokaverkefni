@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+body {
+    margin: 0;
+}
+main {
+    padding: 0 .7rem;
+    background-color: rgba(201, 234, 234, 0.868);
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+figcaption {
+    font-size: .8rem;
+}
+section {
+    margin-top: 2rem;
+}
+
+header {
+    text-align: center;
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.868);
+}
+footer ul{
+    list-style: none;
+}
+
+.bg-color {
+    background-color: rgb(255, 254, 238);
+}
+.col32 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col23 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.test {
+    position: absolute;
+}
+.borderTB {
+    padding: 1rem 0;
+    border-bottom: 2px solid rgb(255, 247, 213);
+    border-top: 2px solid rgb(255, 247, 213);
+}
+
+.upp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font: 2rem;
+    border: 1px solid;
+    padding: 0 .6rem;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+}
+
+.innernav {
+    text-align: center;
+    margin: auto;
+}
+.innernav a:link {
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    padding: .3rem 0;
+    margin: .4rem;
+}
+.innernav a:visited {
+    color: black;
+}
+.innernav a:hover,
+.innernav a:active {
+    color: lightblue;
+}
+
+@media screen and (min-width: 48rem){
+    .col32 {
+        grid-template-columns: 2fr 1fr;
+        gap: 0 2rem;
+    }
+    .col23 {
+        grid-template-columns: 1fr 2fr;
+        gap: 0 2rem;
+    }
+    .col3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 2rem;
+    }
+    .col2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 60rem){
+
+}
+
+@media screen and (min-width: 80rem){
+    main {
+        max-width: 75rem;
+    }
+    nav {
+        max-width: 75rem;
+    }
+}
+
+@media screen and (min-width: 100rem){
+    main {
+        max-width: 80rem;
+    }
+    nav {
+        max-width: 80rem;
+    }
+}
